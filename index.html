@@ -3,22 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teh Xue En e-Portfolio</title>
+<title>Teh Xue En | e-Portfolio</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(to right, #e8f5e9, #f1f8e9);
     scroll-behavior: smooth;
-    background: #f4f8f4;
+    color: #2e2e2e;
 }
 
 header {
-    background: #2e7d32;
+    background: linear-gradient(135deg, #2e7d32, #1b5e20);
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 40px 20px;
 }
+
+header h1 { margin: 0; font-size: 34px; }
+header p { margin-top: 10px; opacity: 0.9; }
 
 nav {
     position: sticky;
@@ -27,37 +31,51 @@ nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 1000;
 }
 
 nav a {
     color: white;
-    padding: 14px 20px;
+    padding: 14px 18px;
     text-decoration: none;
     font-weight: bold;
 }
 
 nav a:hover {
     background: #66bb6a;
+    border-radius: 5px;
 }
 
 section {
-    padding: 40px;
-    max-width: 1000px;
+    padding: 50px 20px;
+    max-width: 1100px;
     margin: auto;
+}
+
+h2 {
+    color: #1b5e20;
+    border-left: 5px solid #66bb6a;
+    padding-left: 10px;
 }
 
 .card {
     background: white;
-    padding: 20px;
+    padding: 22px;
     margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
 }
 
 iframe {
     width: 100%;
-    height: 300px;
+    height: 320px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 button {
@@ -65,8 +83,9 @@ button {
     color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -75,8 +94,8 @@ button:hover {
 
 footer {
     text-align: center;
-    padding: 20px;
-    background: #2e7d32;
+    padding: 25px;
+    background: #1b5e20;
     color: white;
 }
 </style>
@@ -85,8 +104,8 @@ footer {
 <body>
 
 <header>
-    <h1>Teh Xue En e-Portfolio</h1>
-    <p>Mobile Programming (TTTM2213)</p>
+    <h1>Teh Xue En</h1>
+    <p>Mobile Programming e-Portfolio | TTTM2213</p>
 </header>
 
 <nav>
@@ -95,59 +114,65 @@ footer {
     <a href="#projects">Projects</a>
     <a href="#reflection">Reflection</a>
     <a href="#skills">Skills</a>
+    <a href="#resources">Resources</a>
 </nav>
 
+<!-- HOME -->
 <section id="home">
-    <h2>Home</h2>
+    <h2>About Me</h2>
     <div class="card">
         <p><b>Name:</b> Teh Xue En</p>
         <p><b>Matric:</b> A208467</p>
-        <p><b>Programme:</b> TTTM2213 Pengaturcaraan Aplikasi Mudah Alih</p>
+        <p><b>Programme:</b> TTTM2213 Mobile Application Programming</p>
         <p><b>Instructor:</b> Dr. Nazatul</p>
-        <p><b>SDG:</b> SDG 2: Zero Hunger</p>
-        <p>Improving nutrition awareness through mobile technology.</p>
+        <p><b>SDG:</b> SDG 2 - Zero Hunger</p>
+        <p>Using mobile technology to improve nutrition awareness and promote healthier lifestyle choices through digital solutions.</p>
     </div>
 </section>
 
+<!-- LABS -->
 <section id="labs">
     <h2>Labs</h2>
 
     <div class="card">
-        <h3>Lab 1 - UI</h3>
+        <h3>Lab 1 - UI Design</h3>
         <iframe src="https://www.youtube.com/embed/N5qM0k8Zo5A"></iframe>
+        <p><b>Reflection:</b> In this lab, I learned the foundational principles of user interface design using Jetpack Compose in Android development. I explored how composable functions are used to build UI elements such as text, buttons, images, and layouts. At first, I struggled to understand how different UI components interact within a single screen, but through practice, I gained clarity on structuring layouts effectively. This lab helped me understand the importance of simplicity, alignment, and spacing in creating user-friendly interfaces that enhance usability and visual appeal.</p>
     </div>
 
     <div class="card">
         <h3>Lab 2 - Interaction</h3>
         <iframe src="https://www.youtube.com/embed/ccnSEB_K4d4"></iframe>
+        <p><b>Reflection:</b> In this lab, I learned how to implement user interaction features such as button clicks, text input handling, and event responses in Android applications. I understood how apps can respond dynamically to user actions, which is essential for creating engaging mobile experiences. Initially, I faced difficulty handling input validation and state updates, but after repeated practice, I became more comfortable with event-driven programming. This lab strengthened my understanding of how user interaction plays a key role in improving application usability and responsiveness.</p>
     </div>
 
     <div class="card">
         <h3>Lab 3 - Material Design</h3>
         <iframe src="https://www.youtube.com/embed/kyTIGfKDHFo"></iframe>
+        <p><b>Reflection:</b> This lab introduced me to Material Design principles and how they are applied in Android applications to create consistent and visually appealing user interfaces. I learned about color schemes, typography, spacing, elevation, and component consistency. Through this lab, I realized that design is not only about appearance but also about improving user experience. Applying Material Design made my applications look more professional and easier to navigate, which is important in real-world mobile development.</p>
     </div>
 
     <div class="card">
         <h3>Lab 4 - Navigation</h3>
         <iframe src="https://www.youtube.com/embed/H_ZniMEHJJM"></iframe>
+        <p><b>Reflection:</b> In this lab, I learned how to implement navigation between multiple screens in an Android application using Jetpack Compose navigation components. I also learned how to pass data between screens, which is important for building multi-page applications. At first, managing multiple screens was confusing, especially when handling data flow between them, but this lab helped me understand navigation architecture more clearly. It improved my ability to structure applications in a more organized and user-friendly way.</p>
     </div>
 
     <div class="card">
         <h3>Lab 5 - Room Database</h3>
         <iframe src="https://www.youtube.com/embed/eks6s3jRNuM"></iframe>
+        <p><b>Reflection:</b> In this lab, I learned how to use Room Database to store and manage local data in Android applications. I understood the concepts of entities, DAO (Data Access Objects), and database classes, which are essential for persistent data storage. Initially, I found database concepts quite challenging, but through practice, I gained a better understanding of how data is stored, retrieved, and updated within an application. This lab gave me valuable insight into real-world application development where data persistence is essential.</p>
     </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
     <h2>Projects</h2>
 
     <div class="card">
         <h3>Project 1 - NutriTrack</h3>
-        <p>Helps users track nutrition intake and improve healthy eating habits.</p>
-
         <iframe src="https://www.youtube.com/embed/0xf6W4w-OsI"></iframe>
-
-        <br><br>
+        <p><b>Reflection:</b> In this project, I developed a basic nutrition tracking application called NutriTrack. This project allowed me to apply the knowledge gained from previous labs, including UI design, interaction handling, and navigation. I learned how to combine multiple components into a functional application. I faced challenges in integrating different features together, but this helped me improve my debugging and problem-solving skills. Overall, this project strengthened my understanding of building complete Android applications from scratch.</p>
         <a href="https://github.com/a208467/mobile-project-1" target="_blank">
             <button>View on GitHub</button>
         </a>
@@ -155,27 +180,25 @@ footer {
 
     <div class="card">
         <h3>Project 2 - NutriTrack Advanced</h3>
-        <p>Enhanced version with Room Database, APIs, sensors, and cloud features.</p>
-
-        <iframe src="https://www.youtube.com/embed/1feqt60TeIg" allowfullscreen></iframe>
-
-        <br><br>
-
-        <a href="https://github.com/a208467/mobile-project-2" target="_blank">
+        <iframe src="https://www.youtube.com/embed/1feqt60TeIg"></iframe>
+        <p><b>Reflection:</b> In this advanced project, I enhanced my previous application by integrating more complex features such as Room Database, APIs, sensors, and cloud services. This project provided me with real-world experience in building scalable mobile applications. I faced challenges in combining multiple technologies, especially when managing data flow and API integration, but this improved my technical and analytical skills. This project significantly deepened my understanding of modern Android development practices.</p>
+        <a href="https://github.com/a208467/_TEH-XUE-EN_DR-NAZATUL_PROJECT-2" target="_blank">
             <button>View on GitHub</button>
         </a>
     </div>
 </section>
 
+<!-- OVERALL REFLECTION -->
 <section id="reflection">
-    <h2>Reflection</h2>
+    <h2>Overall Reflection</h2>
     <div class="card">
         <p>
-        Throughout this course, I learned how to develop Android applications using Kotlin and Jetpack Compose. Starting from basic UI design in Lab 1, I gradually learned interaction, Material Design, navigation, and Room Database. Through Project 1 and Project 2, I gained experience building full mobile applications and integrating advanced features such as APIs and cloud services. This course improved my technical and problem-solving skills in mobile development.
+        Throughout this course, I have gained comprehensive knowledge and hands-on experience in mobile application development using Kotlin and Jetpack Compose. I started with basic UI design and gradually progressed to more advanced topics such as user interaction, navigation, database management, API integration, and cloud services. This learning journey has significantly improved my technical skills, critical thinking, and problem-solving abilities. I am now more confident in developing full-featured Android applications that meet real-world requirements.
         </p>
     </div>
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
     <h2>Skills</h2>
     <div class="card">
@@ -187,6 +210,17 @@ footer {
         <p>Firebase</p>
         <p>Material Design</p>
         <p>GitHub</p>
+    </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+    <h2>Resources</h2>
+    <div class="card">
+        <p><b>Development Tools:</b> Android Studio, GitHub, Firebase</p>
+        <p><b>Libraries Used:</b> Jetpack Compose, Room Database, Retrofit</p>
+        <p><b>Learning Sources:</b> Lecturer notes, online tutorials, official Android documentation</p>
+        <p><b>Acknowledgement:</b> AI assistance was used to improve structure and formatting of this e-Portfolio.</p>
     </div>
 </section>
 
